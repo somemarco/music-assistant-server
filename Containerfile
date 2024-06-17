@@ -74,7 +74,7 @@ RUN set -x \
 
 # Copy widevine client files to container
 RUN mkdir -p /usr/local/bin/widevine_cdm
-COPY widevine_cdm/* /usr/local/bin/widevine_cdm/
+# COPY widevine_cdm/* /usr/local/bin/widevine_cdm/
 
 # https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md#build-mounts-run---mount
 # Install all built wheels
